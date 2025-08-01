@@ -48,20 +48,50 @@
         }
         
         .logo-display {
-            width: 220px;
-            height: 220px;
-            margin: 0 auto 20px;
-            background: linear-gradient(45deg, #0f0c29, #302b63, #24243e);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 0 30px rgba(106, 90, 205, 0.6);
-            border: 3px solid #6a5acd;
-            position: relative;
-            overflow: hidden;
-            animation: pulse 6s infinite alternate;
-        }
+    width: 350px;  /* Lebar diperpanjang */
+    height: 120px; /* Tinggi dikurangi */
+    margin: 0 auto 30px;
+    background: linear-gradient(45deg, #0f0c29, #302b63, #24243e);
+    border-radius: 15px; /* Sudut melengkung */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 25px rgba(106, 90, 205, 0.7);
+    border: 2px solid #8a2be2;
+    position: relative;
+    overflow: hidden;
+    animation: pulse 6s infinite alternate;
+    transition: transform 0.3s ease;
+}
+
+/* Efek hover tambahan */
+.logo-display:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 35px rgba(106, 90, 205, 0.9);
+}
+
+/* Animasi garis berpendar */
+.logo-display::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        to bottom right,
+        transparent, transparent,
+        rgba(255, 255, 255, 0.1),
+        transparent, transparent
+    );
+    transform: rotate(30deg);
+    animation: shine 4s infinite;
+}
+
+@keyframes shine {
+    0% { transform: rotate(30deg) translate(-30%, -30%); }
+    100% { transform: rotate(30deg) translate(30%, 30%); }
+}
         
         @keyframes pulse {
             0% { box-shadow: 0 0 20px rgba(106, 90, 205, 0.6); }
@@ -70,7 +100,7 @@
         
         .logo-display img {
             max-width: 80%;
-            filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.7));
+            filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.5));
         }
         
         h1 {
