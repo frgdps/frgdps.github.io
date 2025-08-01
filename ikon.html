@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreedomGDPS!!11 - Logo Meaning</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            color: #e6e6e6;
+            min-height: 100vh;
+            padding: 20px;
+            position: relative;
+            overflow-x: hidden;
+        }
+        
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://i.imgur.com/gecSW49.png') center/300px repeat;
+            opacity: 0.05;
+            z-index: -1;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 30px 0;
+            margin-bottom: 30px;
+            position: relative;
+        }
+        
+        .logo-display {
+            width: 220px;
+            height: 220px;
+            margin: 0 auto 20px;
+            background: linear-gradient(45deg, #0f0c29, #302b63, #24243e);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 30px rgba(106, 90, 205, 0.6);
+            border: 3px solid #6a5acd;
+            position: relative;
+            overflow: hidden;
+            animation: pulse 6s infinite alternate;
+        }
+        
+        @keyframes pulse {
+            0% { box-shadow: 0 0 20px rgba(106, 90, 205, 0.6); }
+            100% { box-shadow: 0 0 40px rgba(106, 90, 205, 0.8), 0 0 60px rgba(106, 90, 205, 0.4); }
+        }
+        
+        .logo-display img {
+            max-width: 80%;
+            filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.7));
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            background: linear-gradient(45deg, #8a2be2, #6a5acd);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        
+        .language-switcher {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0 40px;
+            gap: 15px;
+        }
+        
+        .lang-btn {
+            padding: 12px 30px;
+            background: rgba(106, 90, 205, 0.3);
+            color: #fff;
+            border: 2px solid #6a5acd;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .lang-btn:hover {
+            background: rgba(106, 90, 205, 0.5);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(106, 90, 205, 0.4);
+        }
+        
+        .lang-btn.active {
+            background: #6a5acd;
+            box-shadow: 0 0 20px rgba(106, 90, 205, 0.7);
+        }
+        
+        .content-section {
+            display: none;
+            animation: fadeIn 0.8s ease forwards;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .content-section.active {
+            display: block;
+        }
+        
+        .section {
+            background: rgba(30, 30, 50, 0.7);
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(106, 90, 205, 0.4);
+            backdrop-filter: blur(10px);
+        }
+        
+        .section-title {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #6a5acd;
+        }
+        
+        .section-title i {
+            font-size: 2.2rem;
+            color: #8a2be2;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            color: #b19cd9;
+        }
+        
+        .symbol-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 20px;
+        }
+        
+        .symbol-desc {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #9370db;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        h3 i {
+            font-size: 1.2rem;
+        }
+        
+        ul {
+            padding-left: 25px;
+            margin: 15px 0;
+        }
+        
+        li {
+            margin-bottom: 12px;
+            line-height: 1.6;
+        }
+        
+        p {
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
+        
+        .highlight {
+            background: rgba(106, 90, 205, 0.2);
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+        
+        .interpretation {
+            background: linear-gradient(45deg, rgba(106, 90, 205, 0.3), rgba(138, 43, 226, 0.3));
+            border-left: 4px solid #8a2be2;
+            padding: 25px;
+            border-radius: 0 10px 10px 0;
+            margin-top: 20px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 40px;
+            border-top: 1px solid rgba(106, 90, 205, 0.4);
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        
+        .cube-animation {
+            width: 150px;
+            height: 150px;
+            position: relative;
+            transform-style: preserve-3d;
+            animation: rotate 15s infinite linear;
+            margin: 20px auto;
+        }
+        
+        @keyframes rotate {
+            0% { transform: rotateX(0) rotateY(0); }
+            100% { transform: rotateX(360deg) rotateY(360deg); }
+        }
+        
+        .cube-face {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            background: rgba(106, 90, 205, 0.6);
+            border: 2px solid #8a2be2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: white;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+            box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.3), 0 0 20px rgba(106, 90, 205, 0.5);
+        }
+        
+        .front { transform: translateZ(75px); }
+        .back { transform: rotateY(180deg) translateZ(75px); }
+        .top { transform: rotateX(90deg) translateZ(75px); }
+        .bottom { transform: rotateX(-90deg) translateZ(75px); }
+        .left { transform: rotateY(-90deg) translateZ(75px); }
+        .right { transform: rotateY(90deg) translateZ(75px); }
+        
+        @media (max-width: 768px) {
+            .logo-display {
+                width: 180px;
+                height: 180px;
+            }
+            
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            .section {
+                padding: 20px;
+            }
+            
+            .symbol-container {
+                flex-direction: column;
+            }
+            
+            .lang-btn {
+                padding: 10px 20px;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-display">
+                <img src="https://i.imgur.com/gecSW49.png" alt="FreedomGDPS!!11 Logo">
+            </div>
+            <h1>FreedomGDPS!!11 Logo Meaning</h1>
+            <p class="subtitle">Discover the profound symbolism and philosophy behind our iconic logo that represents creativity, freedom, and community in the Geometry Dash universe.</p>
+            
+            <div class="language-switcher">
+                <button class="lang-btn active" data-lang="english">
+                    <i class="fas fa-globe"></i> English
+                </button>
+                <button class="lang-btn" data-lang="indonesian">
+                    <i class="fas fa-globe-asia"></i> Bahasa Indonesia
+                </button>
+            </div>
+        </header>
+        
+        <!-- English Content -->
+        <section id="english-content" class="content-section active">
+            <div class="section">
+                <div class="section-title">
+                    <i class="fas fa-cube"></i>
+                    <h2>🔲 Cube Symbol</h2>
+                </div>
+                <p>The logo features a distinctive 3D cube, which serves as the iconic central character in Geometry Dash—representing the primary avatar controlled by players throughout their journey.</p>
+                
+                <div class="symbol-container">
+                    <div class="symbol-desc">
+                        <h3><i class="fas fa-shield-alt"></i> Stability and Structure</h3>
+                        <p>With its symmetrical and equal sides, the cube epitomizes balance and a solid foundation. This reflects the server's unwavering stability in delivering a consistently exceptional gameplay experience.</p>
+                        
+                        <h3><i class="fas fa-users"></i> Community Unity</h3>
+                        <p>Each facet of the cube symbolizes different segments of our vibrant community—players, creators, moderators, and contributors—all seamlessly interconnected to form a unified, harmonious ecosystem.</p>
+                    </div>
+                    <div class="symbol-desc">
+                        <h3><i class="fas fa-puzzle-piece"></i> Modularity and Customization</h3>
+                        <p>As a fundamental building block, the cube represents versatility and adaptability. This mirrors the server's open-ended architecture, allowing for extensive customization, creative experimentation, and personal expression.</p>
+                        
+                        <h3><i class="fas fa-lock"></i> Security and Protection</h3>
+                        <p>The enclosed nature of the cube signifies safety and protection—embodying our commitment to robust data security, uncompromised user privacy, and a trustworthy gaming environment.</p>
+                    </div>
+                </div>
+                
+                <div class="cube-animation">
+                    <div class="cube-face front"><i class="fas fa-gamepad"></i></div>
+                    <div class="cube-face back"><i class="fas fa-users"></i></div>
+                    <div class="cube-face top"><i class="fas fa-paint-brush"></i></div>
+                    <div class="cube-face bottom"><i class="fas fa-shield-alt"></i></div>
+                    <div class="cube-face left"><i class="fas fa-cogs"></i></div>
+                    <div class="cube-face right"><i class="fas fa-heart"></i></div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">
+                    <i class="fas fa-font"></i>
+                    <h2>🅵 The Word "Freedm"</h2>
+                </div>
+                <p>"Freedm" is a stylized abbreviation of "Freedom", intentionally omitting the "o" to achieve a sleek, modern, and memorable brand identity. This minimalist approach evokes a bold sense of identity while maintaining visual elegance.</p>
+                
+                <div class="symbol-container">
+                    <div class="symbol-desc">
+                        <h3><i class="fas fa-gamepad"></i> Freedom to Play</h3>
+                        <p>Enjoy unrestricted access to levels, features, and content that might be limited in official Geometry Dash servers—without artificial barriers or unnecessary constraints.</p>
+                        
+                        <h3><i class="fas fa-paint-brush"></i> Freedom to Create</h3>
+                        <p>Empower your imagination with expanded tools and creative assets, enabling you to design, build, and share your unique levels with minimal limitations.</p>
+                    </div>
+                    <div class="symbol-desc">
+                        <h3><i class="fas fa-comment-alt"></i> Freedom of Expression</h3>
+                        <p>A platform where creators can authentically express themselves through visual design, musical integration, innovative gameplay mechanics, and artistic storytelling.</p>
+                        
+                        <h3><i class="fas fa-unlock-alt"></i> Freedom from Limits</h3>
+                        <p>Experience premium items, exclusive assets, and fair rating systems without paywalls or restrictive systems found in official versions.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">
+                    <i class="fas fa-palette"></i>
+                    <h2>🧠 Visual and Aesthetic Meaning</h2>
+                </div>
+                
+                <h3><i class="fas fa-fill-drip"></i> Gray and Black Tones</h3>
+                <p>The sophisticated monochromatic palette conveys a sleek, futuristic, and professional aesthetic while maintaining focus on gameplay content and creative elements.</p>
+                
+                <h3><i class="fas fa-lightbulb"></i> Glow/Shadow Effects</h3>
+                <p>The luminous glow symbolizes FreedomGDPS!!11 as a beacon of creativity—shining brightly against the backdrop of restrictions, standing out as a truly innovative and open alternative.</p>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">
+                    <i class="fas fa-star"></i>
+                    <h2>🔗 Final Interpretation</h2>
+                </div>
+                
+                <div class="interpretation">
+                    <p>This logo transcends mere visual representation—it embodies a philosophy. A philosophy rooted in freedom, boundless creativity, and a thriving community.</p>
+                    <p>The cube serves dual purposes: as the recognizable face of the player and as a powerful metaphor for untapped potential within a protected environment. The word "Freedm" proudly declares our mission: to create a sanctuary where everyone—from casual players to master creators—can freely explore, build, innovate, and thrive without constraints.</p>
+                    <p>FreedomGDPS!!11 is more than a server; it's a movement celebrating the limitless possibilities within the Geometry Dash universe.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Indonesian Content -->
+        <section id="indonesian-content" class="content-section">
+            <div class="section">
+                <div class="section-title">
+                    <i class="fas fa-cube"></i>
+                    <h2>🔲 Kubus (Cube)</h2>
+                </div>
+                <p>Logo menampilkan kubus 3D yang ikonik di dunia Geometry Dash—sebagai bentuk utama karakter yang dimainkan oleh para pemain dalam petualangan mereka.</p>
+                
+                <div class="symbol-container">
+                    <div class="symbol-desc">
+                        <h3><i class="fas fa-shield-alt"></i> Stabilitas dan Keteraturan</h3>
+                        <p>Dengan sisi-sisi yang simetris dan seimbang, kubus melambangkan fondasi yang kokoh. Ini mencerminkan stabilitas server dalam memberikan pengalaman bermain yang konsisten dan andal.</p>
+                        
+                        <h3><i class="fas fa-users"></i> Komunitas yang Solid</h3>
+                        <p>Setiap sisi kubus mewakili elemen berbeda dalam komunitas—pemain, kreator level, moderator, dan kontributor—semua terhubung erat membentuk ekosistem yang harmonis.</p>
+                    </div>
+                    <div class="symbol-desc">
+                        <h3><i class="fas fa-puzzle-piece"></i> Modularitas dan Kustomisasi</h3>
+                        <p>Sebagai unit dasar, kubus melambangkan fleksibilitas dan adaptabilitas. Ini mencerminkan arsitektur server yang terbuka, memungkinkan kustomisasi luas dan eksperimen kreatif.</p>
+                        
+                        <h3><i class="fas fa-lock"></i> Keamanan dan Perlindungan</h3>
+                        <p>Bentuk tertutup kubus menyimbolkan perlindungan—mewakili komitmen kami pada keamanan data, privasi pengguna, dan lingkungan bermain yang terpercaya.</p>
+                    </div>
+                </div>
+                
+                <div class="cube-animation">
+                    <div class="cube-face front"><i class="fas fa-gamepad"></i></div>
+                    <div class="cube-face back"><i class="fas fa-users"></i></div>
+                    <div class="cube-face top"><i class="fas fa-paint-brush"></i></div>
+                    <div class="cube-face bottom"><i class="fas fa-shield-alt"></i></div>
+                    <div class="cube-face left"><i class="fas fa-cogs"></i></div>
+                    <div class="cube-face right"><i class="fas fa-heart"></i></div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">
+                    <i class="fas fa-font"></i>
+                    <h2>🅵 Tulisan "Freedm"</h2>
+                </div>
+                <p>"Freedm" adalah singkatan gaya dari "Freedom", dengan sengaja menghilangkan huruf "o" untuk menciptakan identitas merek yang modern, elegan, dan mudah diingat.</p>
+                
+                <div class="symbol-container">
+                    <div class="symbol-desc">
+                        <h3><i class="fas fa-gamepad"></i> Freedom to Play</h3>
+                        <p>Nikmati akses tanpa batas ke level, fitur, dan konten yang mungkin terbatas di server resmi Geometry Dash—tanpa hambatan buatan atau pembatasan tidak perlu.</p>
+                        
+                        <h3><i class="fas fa-paint-brush"></i> Freedom to Create</h3>
+                        <p>Wujudkan imajinasi Anda dengan alat dan aset kreatif yang lebih luas, memungkinkan Anda merancang, membangun, dan membagikan level unik dengan sedikit batasan.</p>
+                    </div>
+                    <div class="symbol-desc">
+                        <h3><i class="fas fa-comment-alt"></i> Freedom of Expression</h3>
+                        <p>Platform di mana kreator dapat berekspresi secara autentik melalui desain visual, integrasi musik, mekanika gameplay inovatif, dan penceritaan artistik.</p>
+                        
+                        <h3><i class="fas fa-unlock-alt"></i> Freedom from Constraints</h3>
+                        <p>Rasakan item premium, aset eksklusif, dan sistem rating yang adil tanpa paywall atau sistem restriktif seperti di versi resmi.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">
+                    <i class="fas fa-palette"></i>
+                    <h2>🧠 Makna Visual dan Estetika</h2>
+                </div>
+                
+                <h3><i class="fas fa-fill-drip"></i> Gradasi Abu dan Hitam</h3>
+                <p>Palet monokromatik yang canggih memberikan kesan futuristik dan profesional, sambil menjaga fokus pada konten gameplay dan elemen kreatif.</p>
+                
+                <h3><i class="fas fa-lightbulb"></i> Efek Glow atau Bayangan</h3>
+                <p>Cahaya yang berpendar melambangkan FreedomGDPS!!11 sebagai mercusuar kreativitas—bersinar terang di tengah berbagai batasan, menonjol sebagai alternatif yang benar-benar inovatif dan terbuka.</p>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">
+                    <i class="fas fa-star"></i>
+                    <h2>🔗 Kesimpulan</h2>
+                </div>
+                
+                <div class="interpretation">
+                    <p>Logo ini melampaui sekadar representasi visual—ia mewujudkan sebuah filosofi. Filosofi yang berakar pada kebebasan, kreativitas tanpa batas, dan komunitas yang dinamis.</p>
+                    <p>Kubus memiliki tujuan ganda: sebagai wajah yang dikenali pemain dan metafora kuat akan potensi tak terbatas dalam lingkungan yang terlindungi. Tulisan "Freedm" dengan bangga menyatakan misi kami: menciptakan tempat suci di mana siapa pun—dari pemain kasual hingga kreator ahli—dapat bebas menjelajahi, membangun, berinovasi, dan berkembang tanpa batasan.</p>
+                    <p>FreedomGDPS!!11!!11 lebih dari sekadar server; ia adalah gerakan yang merayakan kemungkinan tak terbatas di alam semesta Geometry Dash.</p>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <p>FreedomGDPS!!11 © 2025 | Philosophy of Freedom, Creativity, and Community</p>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const langButtons = document.querySelectorAll('.lang-btn');
+            const contentSections = document.querySelectorAll('.content-section');
+            
+            langButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const targetLang = this.getAttribute('data-lang');
+                    
+                    // Update active button
+                    langButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Show target content, hide others
+                    contentSections.forEach(section => {
+                        section.classList.remove('active');
+                        if (section.id === `${targetLang}-content`) {
+                            setTimeout(() => {
+                                section.classList.add('active');
+                            }, 50);
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
